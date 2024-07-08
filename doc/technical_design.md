@@ -3,11 +3,11 @@
 ## Title and People
 
 - Title: Technical Specification for Iskrambol Game by Nittee
-- Author(s): jiroblea
+- Author(s): jiroblea, servin
 - Team:
 - Reviewer(s):
 - Created on: 2024 July 8
-- Last Updated: 2024 July 8 | 9:30 AM
+- Last Updated: 2024 July 8 | 9:45 AM
 - GitHub Issue: #5
 
 ## Introduction
@@ -27,8 +27,10 @@
 
 - a wireless local PvP mobile game that tests players' vocabulary skills
 - will consists of the following game modes:
-  - campaigns (single-player, time-bound, point-based)
+  - campaign (single-player, point-based)
   - multiplayer (wireless, local PvP, point-based)
+  - daily puzzle (single-player, random word, time-strict)
+  - challenge (a player can post a word that other players can reshuffle to obtain new words)
 
 #### Non-Functional Requirements or Non-Goals
 
@@ -89,7 +91,7 @@
 
 *Describe any specific algorithms, algorithms, or design patterns that are relevant to the system's implementation. Explain the rationale behind their selection and how they address the system's requirements.*
 
-- 
+- TODO
 
 ### Error Handling and Exception Management
 
