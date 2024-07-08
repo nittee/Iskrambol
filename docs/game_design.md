@@ -3,6 +3,21 @@
 This is based on the **One-page Design Document**.  
 This file will continue to evolve during the development process.
 
+## Table of Contents
+
+- [Game Design Document (GDD)](#game-design-document-gdd)
+  - [Table of Contents](#table-of-contents)
+  - [Game Identity / Mantra](#game-identity--mantra)
+  - [Design Pillars](#design-pillars)
+  - [Mechanics](#mechanics)
+  - [Features](#features)
+  - [Interface](#interface)
+  - [Art Style](#art-style)
+  - [Music / Sound](#music--sound)
+  - [Target Platform and Audience](#target-platform-and-audience)
+  - [Development Roadmap](#development-roadmap)
+  - [References](#references)
+
 ## Game Identity / Mantra
 
 *A single sentence description of the game that you will use to guide design decisions.*
@@ -80,3 +95,5 @@ Confusion (?). AHA-moment.
 
 - [GameDev Underground](https://imgv2-2-f.scribdassets.com/img/document/470888352/original/5b3a0b6b63/1683989803?v=1)
 - [gamedevbeginner](https://gamedevbeginner.com/wp-content/uploads/GDD-example-2.png)
+
+Back to [Table of Contents](#table-of-contents)
