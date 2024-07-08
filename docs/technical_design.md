@@ -63,22 +63,46 @@
 
 *Detail the individual components and modules that make up the system. Explain their responsibilities, interfaces, and dependencies. Use diagrams, such as class diagrams or component diagrams, to visualize the system's structure.*
 
-#### Directories
+#### System Directories
 
-- doc
-  - contain documentations
+- docs directory
+  - contain documentation files
 
 - iskrambol directory
-  - the main directory of the source code
-  - contains the main file and other files that build the game
+  - the main python package for the game
+  - contain the main python file and modules for the game
 
 - tests directory
-  - for testing the codes
+  - modules for testing the codes
 
-#### Modules
+- utils directory
+  - a python package
+  - contain locally created python modules
 
-- kivy
-- buildozer
+#### System Components
+
+- system: Ubuntu 22.04
+- software applications:
+  - git
+  - python3
+  - python3-pip
+  - docker
+
+#### Python Modules
+
+##### Standard / Built-in Python Modules
+
+- logging
+- unittest
+
+##### Third Party Modules
+
+- kivy - multiplatform graphical library framework for mobile apps
+- buildozer - for creating app packages easily
+
+##### Locally Created Modules
+
+- utils
 
 ### APIs and Interfaces
 
@@ -104,7 +128,7 @@
 
 *Outline the testing approach and quality assurance measures to be taken. Describe the test cases, test scenarios, and any automation frameworks or tools to be used for testing. Specify the performance and security testing requirements.*
 
-- use unittest
+- use unittest module
 - will study the point of using pytest
 - will find ways to automate the testing process of the UI of the game
 
