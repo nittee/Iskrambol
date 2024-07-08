@@ -1,5 +1,33 @@
 # Technical Design Document (TDD)
 
+## Table of Contents
+
+- [Technical Design Document (TDD)](#technical-design-document-tdd)
+  - [Table of Contents](#table-of-contents)
+  - [Title and People](#title-and-people)
+  - [Introduction](#introduction)
+    - [Overview, Context, or Background](#overview-context-or-background)
+    - [Design Goals and Constraints](#design-goals-and-constraints)
+      - [Functional Requirements, Goals, or Product](#functional-requirements-goals-or-product)
+      - [Non-Functional Requirements or Non-Goals](#non-functional-requirements-or-non-goals)
+      - [Future Goals](#future-goals)
+      - [Assumptions](#assumptions)
+  - [Architectural Overview](#architectural-overview)
+    - [Data Design](#data-design)
+    - [System Components and Modules](#system-components-and-modules)
+      - [System Directories](#system-directories)
+      - [System Components](#system-components)
+      - [Python Modules](#python-modules)
+        - [Standard / Built-in Python Modules](#standard--built-in-python-modules)
+        - [Third Party Modules](#third-party-modules)
+        - [Locally Created Modules](#locally-created-modules)
+    - [APIs and Interfaces](#apis-and-interfaces)
+    - [Algorithms and Design Patterns](#algorithms-and-design-patterns)
+    - [Error Handling and Exception Management](#error-handling-and-exception-management)
+    - [Testing and Quality Assurance](#testing-and-quality-assurance)
+  - [Deployment and Release Strategy](#deployment-and-release-strategy)
+  - [References](#references)
+
 ## Title and People
 
 - Title: Technical Specification for Iskrambol Game by Nittee
@@ -48,6 +76,8 @@
 
 - developers' interest in the project
 - developer's free time to work on the project
+
+Back to [Table of Contents](#table-of-contents)
 
 ## Architectural Overview
 
@@ -104,6 +134,8 @@
 
 - utils
 
+Back to [Table of Contents](#table-of-contents)
+
 ### APIs and Interfaces
 
 *If the system provides APIs or interacts with external services, outline the APIs' specifications, including input parameters, return types, and error handling mechanisms. Specify any communication protocols or standards to be used.*
@@ -140,8 +172,12 @@
 - will use the 'development' branch for developing the game
 - will release the game when the base features are met
 
+Back to [Table of Contents](#table-of-contents)
+
 ## References
 
 - [Demystifying TDD](https://dev.to/siddharth_g/demystifying-the-technical-design-document-a-guide-for-software-engineers-1fk1)
 - [Practical Guide to Writing Technical Specs](https://stackoverflow.blog/2020/04/06/a-practical-guide-to-writing-technical-specs/)
 - [Write a good software design doc](https://www.freecodecamp.org/news/how-to-write-a-good-software-design-document-66fcf019569c/)
+
+Back to [Table of Contents](#table-of-contents)
