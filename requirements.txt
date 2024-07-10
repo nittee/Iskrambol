@@ -1,0 +1,30 @@
+# command to run requirements.txt:
+# pip install -r /path/to/requirements.txt
+
+# kivy requirements according to
+# (https://stackoverflow.com/questions/52283319/how-to-install-kivy-v1-9-1-or-any-specific-version-in-ubuntu)
+python3==3.10.12
+python3-pip
+python-dev      # to build python extensions
+git
+build-essential
+ffmpeg
+libsdl2-dev
+libsdl2-image-dev
+libsdl2-mixer-dev
+libsdl2-ttf-dev
+libportmidi-dev
+libswscale-dev
+libavformat-dev
+libavcodec-dev
+zlib1g-dev
+
+kivy==2.3.0
+
+# for installing buildozer (https://buildozer.readthedocs.io/en/latest/installation.html)
+sudo apt update
+sudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
+pip3 install --user --upgrade Cython==0.29.33 virtualenv  # the --user should be removed if you do this in a venv
+
+# add the following line at the end of your ~/.bashrc file
+export PATH=$PATH:~/.local/bin/
