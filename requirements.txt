@@ -4,22 +4,9 @@
 # kivy requirements according to
 # (https://stackoverflow.com/questions/52283319/how-to-install-kivy-v1-9-1-or-any-specific-version-in-ubuntu)
 python3==3.10.12
-python3-pip
-python-dev      # to build python extensions
-git
-build-essential
-ffmpeg
-libsdl2-dev
-libsdl2-image-dev
-libsdl2-mixer-dev
-libsdl2-ttf-dev
-libportmidi-dev
-libswscale-dev
-libavformat-dev
-libavcodec-dev
-zlib1g-dev
-
-kivy==2.3.0
+python3-pip==22.0.2
+git==2.34.1
+kivy[full]==2.3.0
 
 # for installing buildozer (https://buildozer.readthedocs.io/en/latest/installation.html)
 sudo apt update
