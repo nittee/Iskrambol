@@ -29,14 +29,23 @@ A wireless local PvP multiplayer word game designed to gauge the players' vocabu
 *Three words or phrases that convey the feeling or emotion you want the players to experience.*
 
 Confusion (?). AHA-moment.
+[suggestions] Fast-paced. Brain-racking. Stimulating.
 
 ## Mechanics
 
 *List what the game is from a gameplay perspective.*
 
-- The host can input a parent word with at least 6 letters or choose at random.  
-- Under a specified time limit, the players will jumble the letters of the parent word to distinguish an existing word from the dictionary (English or Tagalog).  
+- The host can input a parent word with at least 6 letters or choose at random.
+    - [suggestion] parent word can be generated randomly
+- Under a specified time limit, the players will jumble the letters of the parent word to distinguish an existing word from the dictionary (English or Tagalog).
+    - [suggestion] time limit may be specified by player or automatically computed based on number of letters of parent word and number of players
+- will consists of the following game modes:
+  - campaign (single-player, point-based)
+  - multiplayer (wireless, local PvP, point-based)
+  - daily puzzle (single-player, random word, time-strict)
+  - challenge (a player can post a word that other players can reshuffle to obtain new words)
 - Points will be given based on the complexity of the word distinguished.
+    - complexity may be equal to: number of letters, rarity of the word, scrabble score, combination of some of the previos ones
 
 ## Features
 
@@ -51,13 +60,23 @@ Confusion (?). AHA-moment.
 *List the player input method, the controls, and how the player interacts with your game.*
 
 - touch-based
+- letters are clicked ("scooped") as if in keyboard, building the word to be included
+    - enter and delete letter buttons included
 - options are given
 
 ## Art Style
 
 *Include references to lots of images and games that have a similar aesthetic to what you're trying to achive.*
 
-- **TODO**
+- iskrambol themed: inspired b Filipino street dessert ice scramble
+- [unsure] "cutesy" themed with pink-based color scheme (pink being the most common ice scramble color)
+    - this may imply that the target audience is primarily Filipino children
+    - the color may be light purple instead. It's prettier anyway lol, but it's less common and therefore less appropriate
+- [suggestions] artstyle themes (ranked from most favorite to least)
+    - lofi aesthetic (pastel colors, simple artstyles, cozy atmosphere); the studying aspect can be highlighted; this also means that the music will be lofi too; cats, don't forget the cats, and much better if they're puspin lol
+    - 8 bit theme (pixel art, simple colors, "Press Start 2P" font); artstyle and music inspirations from games like Mario or Undertale
+    - chalk on blackboard
+    - roblox inspired
 
 ## Music / Sound
 
@@ -65,6 +84,7 @@ Confusion (?). AHA-moment.
 
 - calming
 - Chopin's Nocturnes, Op. 9 No. 2 in E-Flat Major Andante
+- [suggestions] see [Art Style](##Art-Style)
 
 ## Target Platform and Audience
 
