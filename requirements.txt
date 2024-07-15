@@ -6,7 +6,7 @@ python3==3.10.12        # required python version
 python3-pip==22.0.2     # for installing python packages
 git==2.34.1             # for version control
 kivy[full]==2.3.0       # for mobile app development
-buildozer==1.5.0        # for building the app
+buildozer==1.5.0        # for building the app (creating the apk file)
 
 # game requirements
-pyenchant==3.2.2        # for englisth spell checking
+pyenchant==3.2.2        # for spell checking english words
