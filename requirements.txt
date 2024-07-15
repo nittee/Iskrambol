@@ -6,10 +6,10 @@
 # python3-pip==latest   # for installing python packages
 # git==latest           # for version control
 # docker==latest         # for virtualization and containerization
+# openjdk-17-jdk
 
 # buildozer requirements
 cython==3.0.10
-openjdk-17-jdk
 
 # mobile game requirements
 kivy[full]==2.3.0       # for mobile app development
