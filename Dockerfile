@@ -37,10 +37,11 @@ ENV WORK_DIR="${HOME_DIR}/app" \
 # install system dependencies
 RUN apt -y update -qq > /dev/null \
     && DEBIAN_FRONTEND=noninteractive apt install --yes \
-        python3 \ 
-        python3-dev \ 
-        python3-pip \ 
+        python3 \
+        python3-dev \
+        python3-pip \
         git \
+        openjdk-17-jdk \
     && apt -y autoremove \
     && apt -y clean \
     && rm -rf /var/lib/apt/lists/*
