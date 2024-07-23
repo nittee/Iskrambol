@@ -3,8 +3,8 @@
 ## Title and People
 
 - Title: Technical Specification for Iskrambol Game by Nittee
-- Author(s): jiroblea, servin
-- Team:
+- Author(s): jiroblea, servin, ecisip
+- Team: nittee
 - Reviewer(s):
 - Created on: 2024 July 8
 - Last Updated: 2024 July 23
@@ -45,7 +45,10 @@
 *A high level summary and a description of the project, why this is necessary (purpose), and the problems it aims to solve.*
 
 - a wireless local PvP mobile game that gauge players' vocabulary skills
-- to teach young and small people the importance of learning vocabulary while they are having fun and fighting with their friends at the same time (what's the importance of vocabulary? to boast your intellectual capacity)
+- hones vocabulary skills while having fun and fighting with their friends at the same time
+- honing vocabulary skills boosts one's intellectual capacity
+- can be played by all ages as long as they're studying/speaking English and/or Filipino
+- may help in language vocabulary skills for language learners (classroom based language education or learning foreign languages)
 
 ### Design Goals and Constraints
 
@@ -59,6 +62,9 @@
   - multiplayer (wireless, local PvP, point-based)
   - daily puzzle (single-player, random word, time-strict)
   - challenge (a player can post a word that other players can reshuffle to obtain new words)
+- local and global high score records
+- [suggestion] language modes: Filipino, English, or both (and perhaps even more)
+- [suggestion] daily puzzle streak record
 
 #### Non-Functional Requirements or Non-Goals
 
@@ -88,6 +94,14 @@ Back to [Table of Contents](#table-of-contents)
 *Outline the data model and database design considerations. Describe the database schema, entity relationships, and any data migration or storage requirements. Also cover data access patterns and caching strategies.*
 
 - data storage type: don't have an idea
+- data schema should contain:
+  - [not sure] players (player's username, high score, etc)
+  - high scores table (name, score, game mode)
+- [suggestions] ways to store player data
+  - account based; just a username with or without a password
+  - device based; maybe it's possible?
+  - not stored at all; usernames are entered every start of the game for high score record and multiplayer stuff
+- list of English/Filipino words stored as [idk]
 
 ### System Components and Modules
 
@@ -170,6 +184,12 @@ Back to [Table of Contents](#table-of-contents)
 
 - will use the 'main' branch to deploy the game
 - will use the 'development' branch for developing the game
+- [suggestion] PR per feature method:
+  - one developer works for a specific task or feature
+  - that developer creates a branch to work with
+  - once done, creates a pull request (PR) from his branch to `main`
+  - the PR will be reviewed
+  - to merge or not to merge
 - will release the game when the base features are met
 
 Back to [Table of Contents](#table-of-contents)
