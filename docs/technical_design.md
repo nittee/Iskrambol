@@ -1,10 +1,20 @@
 # Technical Design Document (TDD)
 
+## Title and People
+
+- Title: Technical Specification for Iskrambol Game by Nittee
+- Author(s): jiroblea, servin
+- Team:
+- Reviewer(s):
+- Created on: 2024 July 8
+- Last Updated: 2024 July 23
+- GitHub Issue: #5
+
 ## Table of Contents
 
 - [Technical Design Document (TDD)](#technical-design-document-tdd)
-  - [Table of Contents](#table-of-contents)
   - [Title and People](#title-and-people)
+  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
     - [Overview, Context, or Background](#overview-context-or-background)
     - [Design Goals and Constraints](#design-goals-and-constraints)
@@ -27,16 +37,6 @@
     - [Testing and Quality Assurance](#testing-and-quality-assurance)
   - [Deployment and Release Strategy](#deployment-and-release-strategy)
   - [References](#references)
-
-## Title and People
-
-- Title: Technical Specification for Iskrambol Game by Nittee
-- Author(s): jiroblea, servin
-- Team:
-- Reviewer(s):
-- Created on: 2024 July 8
-- Last Updated: 2024 July 8 | 9:45 AM
-- GitHub Issue: #5
 
 ## Introduction
 
