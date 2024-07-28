@@ -1,0 +1,17 @@
+# command to run requirements.txt:
+# pip install -r /path/to/requirements.txt
+
+# development device requirements
+# python3==3.10         # required python version
+# python3-pip==latest   # for installing python packages
+# git==latest           # for version control
+# docker==latest         # for virtualization and containerization
+# openjdk-17-jdk
+
+# buildozer requirements
+cython==3.0.10
+
+# mobile game requirements
+kivy[full]==2.3.0       # for mobile app development
+buildozer==1.5.0        # for building the app (creating the apk file)
+pyenchant==3.2.2        # for spell checking english words

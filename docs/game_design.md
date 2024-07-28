@@ -3,9 +3,20 @@
 This is based on the **One-page Design Document**.  
 This file will continue to evolve during the development process.
 
+## Title and People
+
+- Title: Game Design Document for Iskrambol Game by Nittee
+- Author(s): jiroblea, servin
+- Team:
+- Reviewer(s):
+- Created on: 2024 July 8
+- Last Updated: 2024 July 23
+- GitHub Issue: #5
+
 ## Table of Contents
 
 - [Game Design Document (GDD)](#game-design-document-gdd)
+  - [Title and People](#title-and-people)
   - [Table of Contents](#table-of-contents)
   - [Game Identity / Mantra](#game-identity--mantra)
   - [Design Pillars](#design-pillars)
