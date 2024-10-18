@@ -1,14 +1,27 @@
+import kivy
+kivy.require('2.3.0')
+
 from kivy.app import App
-from kivy.uix.label import Label
+from kivy.config import Config
 
-class MainApp(App):
+from kivy.uix.boxlayout import BoxLayout
+
+# screen size are based on Galaxy S20 (most common screen size for mobile)
+Config.set('graphics', 'resizable', False)
+Config.set('graphics', 'width', 360)
+Config.set('graphics', 'height', 800)
+
+
+class MainPage(BoxLayout):
+    pass
+
+
+class Iskrambol(App):
+    
     def build(self):
-        label = Label(text='Hello from Kivy',
-                      size_hint=(.5, .5),
-                      pos_hint={'center_x': .5, 'center_y': .5})
+        root = MainPage()
+        return root
 
-        return label
 
 if __name__ == '__main__':
-    app = MainApp()
-    app.run()
+    Iskrambol().run()
