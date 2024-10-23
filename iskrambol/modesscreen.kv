@@ -1,0 +1,25 @@
+#:kivy 2.3.0
+
+<ModesScreen>:
+    name: 'modes_screen'
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: root.width * .02, root.height * .02
+        spacing: min(root.width, root.height) * .02
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.1
+
+            Button: 
+                text: 'back'
+                on_release: 
+                    app.root.current = 'main_screen'
+                    root.manager.transition.direction = 'right'
+
+            Button: 
+                text: 'information'
+
+        Label:
+            text: 'Modes Screen'

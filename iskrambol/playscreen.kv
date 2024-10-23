@@ -1,0 +1,34 @@
+#:kivy 2.3.0
+
+<PlayScreen>:
+    name: 'play_screen'
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: root.width * .02, root.height * .02
+        spacing: min(root.width, root.height) * .02
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.1
+
+            Button: 
+                text: 'back'
+                on_release: 
+                    app.root.current = 'main_screen'
+                    root.manager.transition.direction = 'right'
+            
+            Button: 
+                text: 'pause'
+
+        Label:
+            text: 'Game Mode'
+            size_hint_y: 0.1
+        
+        Label:
+            text: 'Game Screen'
+            size_hint_y: 0.4
+
+        Label:
+            text: 'Key Characters'
+            size_hint_y: 0.4

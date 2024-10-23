@@ -1,24 +1,38 @@
 #:kivy 2.3.0
 
-<MainPage>:
+
+<MainScreen>:
+    name: 'main_screen'
+
     BoxLayout:
         orientation: 'vertical'
+        padding: root.width * .02, root.height * .02
+        spacing: min(root.width, root.height) * .02
 
         Label:
             text: 'Iskrambol Game'
             size_hint_y: 0.4
-            pos_hint: {'center': True}
 
         BoxLayout:
             orientation: 'vertical'
             size_hint_y: 0.5
+            spacing: min(root.width, root.height) * .02
 
             Button:
                 text: 'Play'
+                on_release: 
+                    app.root.current = 'play_screen'
+                    root.manager.transition.direction = 'left'
             Button:
                 text: 'Modes'
+                on_release: 
+                    app.root.current = 'modes_screen'
+                    root.manager.transition.direction = 'left'
             Button:
                 text: 'About'
+                on_release: 
+                    app.root.current = 'about_screen'
+                    root.manager.transition.direction = 'left'
             Button:
                 text: 'Exit'
         
