@@ -15,10 +15,17 @@ Config.set('graphics', 'height', 800)
 
 
 def load_kv_files():
-    Builder.load_file('iskrambol.kv')
-    Builder.load_file('playscreen.kv')
-    Builder.load_file('modesscreen.kv')
-    Builder.load_file('aboutscreen.kv')
+    kv_files = [
+        'iskrambol.kv',
+        'playscreen.kv', 
+        'modesscreen.kv', 
+        'aboutscreen.kv', 
+        'settingscreen.kv', 
+        'accountscreen.kv',
+    ]
+    
+    for file in kv_files:
+        Builder.load_file(file)    
 
 
 class WindowManager(ScreenManager):
