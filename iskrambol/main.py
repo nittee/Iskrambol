@@ -59,7 +59,7 @@ class IskrambolApp(App):
         for screen in screens:
             screen_manager.add_widget(screen)
 
-        screen_manager.current = 'modes_screen'
+        screen_manager.current = 'main_screen'
 
         return screen_manager
 
