@@ -40,6 +40,14 @@ class AboutScreen(Screen):
     pass
 
 
+class SettingScreen(Screen):
+    pass
+
+
+class AccountScreen(Screen):
+    pass
+
+
 class IskrambolApp(App):
     """
     App object.
@@ -53,7 +61,9 @@ class IskrambolApp(App):
             MainScreen(name='main_screen'),
             PlayScreen(name='play_screen'),
             ModesScreen(name='modes_screen'),
-            AboutScreen(name='about_screen')
+            AboutScreen(name='about_screen'),
+            SettingScreen(name='setting_screen'),
+            AccountScreen(name='account_screen')
         ]
 
         for screen in screens:
