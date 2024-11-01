@@ -28,10 +28,18 @@
 
         RelativeLayout:
 
-            Button:
-                text: 'Modes'
+            RelativeLayout:
                 size_hint: 0.75, 0.15
                 pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+
+                Label:
+                    text: 'Modes'
+                    canvas: 
+                        Color:
+                            rgba: 1,1,1,1
+                        Line:
+                            rectangle: self.x, self.y, self.width, self.height
+                            width: 1
             
             Button:
                 text: 'Multiplayer'
