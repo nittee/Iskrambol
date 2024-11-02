@@ -10,16 +10,48 @@
 
         BoxLayout:
             orientation: 'horizontal'
-            size_hint_y: 0.1
+            size_hint_y: 0.08
 
             Button: 
                 text: 'back'
+                size_hint_x: 0.2
                 on_release: 
                     app.root.current = 'main_screen'
                     root.manager.transition.direction = 'right'
 
-            Button: 
-                text: 'information'
+            Widget:
+                size_hint_x: 0.6
 
-        Label:
-            text: 'Modes Screen'
+            Button: 
+                text: '?'
+                size_hint_x: 0.2
+
+        RelativeLayout:
+
+            RelativeLayout:
+                size_hint: 0.75, 0.15
+                pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+
+                Label:
+                    text: 'Modes'
+                    canvas: 
+                        Color:
+                            rgba: 1,1,1,1
+                        Line:
+                            rectangle: self.x, self.y, self.width, self.height
+                            width: 1
+            
+            Button:
+                text: 'Multiplayer'
+                size_hint: 0.5, 0.08
+                pos_hint: {'center_x': 0.5, 'center_y': 0.72}
+            
+            Button:
+                text: 'Challenge'
+                size_hint: 0.5, 0.08
+                pos_hint: {'center_x': 0.5, 'center_y': 0.58}
+
+            Button:
+                text: 'Puzzle'
+                size_hint: 0.5, 0.08
+                pos_hint: {'center_x': 0.5, 'center_y': 0.44}

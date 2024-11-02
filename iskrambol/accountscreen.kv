@@ -1,0 +1,26 @@
+#:kivy 2.3.0
+
+<AccountScreen>:
+    name: 'modes_screen'
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: root.width * .02, root.height * .02
+        spacing: min(root.width, root.height) * .02
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.08
+
+            Button: 
+                text: 'back'
+                size_hint_x: 0.2
+                on_release: 
+                    app.root.current = 'main_screen'
+                    root.manager.transition.direction = 'right'
+
+            Widget:
+                size_hint_x: 0.8
+        
+        Label:
+            text: 'Account'

@@ -42,7 +42,13 @@
             
             Button:
                 text: 'Setting'
+                on_release: 
+                    app.root.current = 'setting_screen'
+                    root.manager.transition.direction = 'left'
             Button:
                 text: 'Sound'
             Button:
                 text: 'Account'
+                on_release: 
+                    app.root.current = 'account_screen'
+                    root.manager.transition.direction = 'left'
