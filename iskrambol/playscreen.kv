@@ -9,26 +9,116 @@
         spacing: min(root.width, root.height) * .02
 
         BoxLayout:
+            id: 'play_scrn_top_bar'
             orientation: 'horizontal'
             size_hint_y: 0.1
 
             Button: 
+                id: 'play_scrn_back_btn'
                 text: 'back'
+                size_hint_x: .2
                 on_release: 
                     app.root.current = 'main_screen'
                     root.manager.transition.direction = 'right'
             
+            Label:
+                id: 'gamemode'
+                text: 'Game Mode'
+                text_size: self.size
+                halign: 'center'
+                valign: 'bottom'
+                bold: 'True'
+                font_size: 26   # pixels
+                # size_hint_y: 0.1
+            
             Button: 
                 text: 'pause'
-
-        Label:
-            text: 'Game Mode'
-            size_hint_y: 0.1
+                size_hint_x: .2
         
         Label:
-            text: 'Game Screen'
-            size_hint_y: 0.4
+            id: 'subtitle'
+            text: 'subtitle'
+            size_hint_y: 0.05
 
-        Label:
-            text: 'Key Characters'
-            size_hint_y: 0.4
+        BoxLayout:
+            id: 'play_scrn_score_time'
+            orientation: 'horizontal'
+            size_hint_y: 0.05
+
+            Label:
+                id: 'score'
+                text: 'score'
+                text_size: self.size
+                halign: 'right'
+                valign: 'center'
+                size_hint_x: 0.8
+            Label:
+                id: 'time'
+                text: 'time'
+                text_size: self.size
+                halign: 'center'
+                valign: 'center'
+                size_hint_x: 0.2
+        
+        BoxLayout:
+            id: 'play_scrn_built_words'
+            canvas:
+                Line:
+                    rectangle: self.x, self.y, self.width, self.height
+                    width: 1
+            orientation: 'vertical'
+            size_hint_y: 0.3
+        
+            Label:
+                text: 'Game Screen'
+        
+        BoxLayout:
+            id: 'play_scrn_text_input'
+            canvas:
+                Line:
+                    rectangle: self.x, self.y, self.width, self.height
+                    width: 1
+            orientation: 'vertical'
+            size_hint_y: 0.1
+
+        BoxLayout:
+            id: 'play_scrn_keyboard'
+            canvas:
+                Line:
+                    rectangle: self.x, self.y, self.width, self.height
+                    width: 1
+            orientation: 'vertical'
+            size_hint_y: 0.5
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint_y: 0.1
+
+                Widget:
+                    size_hint_x: 0.7
+                
+                Button:
+                    text: 'X'
+                    size_hint_x: 0.3
+                    background_color: 1,0,0,1
+
+            BoxLayout:
+                orientation: 'vertical'
+
+                BoxLayout:
+                    orientation: 'horizontal'
+
+                    Button:
+                        text: 'L'
+                    Button:
+                        text: 'O'
+                    Button:
+                        text: 'R'
+
+                BoxLayout:
+                    orientation: 'horizontal'
+
+                    Button:
+                        text: 'E'
+                    Button:
+                        text: 'M'
