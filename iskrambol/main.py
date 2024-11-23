@@ -5,6 +5,8 @@ from kivy.app import App
 from kivy.config import Config
 from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.uix.popup import Popup
+from kivy.core.window import Window
 
 from playscreen import PlayScreen
 
@@ -25,7 +27,7 @@ def load_kv_files():
     ]
     
     for file in kv_files:
-        Builder.load_file(file)    
+        Builder.load_file(file)
 
 
 class WindowManager(ScreenManager):
@@ -36,20 +38,27 @@ class WindowManager(ScreenManager):
 # screens:
 class MainScreen(Screen):
     """Main menu screen."""
-    pass
+    def show_exit_popup(self):
+        show = ExitWindow()
+        global exitPopup
+        exitPopup = Popup(title="Exit", content=show, size_hint=(0.8,0.6))
+        exitPopup.open()
 
 
 class ModesScreen(Screen):
     pass
 
-
 class AboutScreen(Screen):
     pass
 
 
+class ExitWindow(Screen):
+    def close_exit_popup(self):
+        exitPopup.dismiss()
+
+
 class SettingScreen(Screen):
     pass
-
 
 class AccountScreen(Screen):
     pass
@@ -59,8 +68,6 @@ class IskrambolApp(App):
     """
     App object.
     """
-
-
     def build(self):
 
         screen_manager = WindowManager()
@@ -79,6 +86,11 @@ class IskrambolApp(App):
         screen_manager.current = 'main_screen'
 
         return screen_manager
+    
+
+    def close_application(self):
+        App.get_running_app().stop()
+        Window.close()
 
 
 if __name__ == '__main__':

@@ -1,6 +1,5 @@
 #:kivy 2.3.0
 
-
 <MainScreen>:
     name: 'main_screen'
 
@@ -37,6 +36,8 @@
                     root.manager.transition.direction = 'left'
             Button:
                 text: 'Exit'
+                on_release: 
+                    root.show_exit_popup()
         
         BoxLayout:
             orientation: 'horizontal'
@@ -54,3 +55,26 @@
                 on_release: 
                     app.root.current = 'account_screen'
                     root.manager.transition.direction = 'left'
+
+
+<ExitWindow>:
+    RelativeLayout:
+
+        Label:
+            text: "ARE YOU SURE TO EXIT?"
+            size_hint: 0.8, 0.5
+            pos_hint: {'center_x': 0.5, 'center_y': 0.75}
+
+        Button:
+            text: "NO, JUST MISCLICKED"
+            size_hint: 0.8, 0.2
+            pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+            on_release: 
+                root.close_exit_popup()
+
+        Button:
+            text: "UNFORTUNATELY, YES"
+            size_hint: 0.6, 0.1
+            pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+            on_release:
+                app.close_application()
