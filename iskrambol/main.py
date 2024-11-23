@@ -5,8 +5,6 @@ from kivy.app import App
 from kivy.config import Config
 from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.widget import Widget
 from kivy.uix.popup import Popup
 from kivy.core.window import Window
 
@@ -27,6 +25,7 @@ def load_kv_files():
         'settingscreen.kv', 
         'accountscreen.kv',
     ]
+    
     for file in kv_files:
         Builder.load_file(file)
 
@@ -34,6 +33,7 @@ def load_kv_files():
 class WindowManager(ScreenManager):
     """Required class for window navigation."""
     pass
+
 
 # screens:
 class MainScreen(Screen):
@@ -51,6 +51,7 @@ class ModesScreen(Screen):
 class AboutScreen(Screen):
     pass
 
+
 class ExitWindow(Screen):
     def close_exit_popup(self):
         exitPopup.dismiss()
@@ -61,6 +62,7 @@ class SettingScreen(Screen):
 
 class AccountScreen(Screen):
     pass
+
 
 class IskrambolApp(App):
     """
