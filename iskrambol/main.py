@@ -8,7 +8,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.popup import Popup
 from kivy.core.window import Window
 
-from playscreen import PlayScreen
+from functions.playscreen import PlayScreen
 
 # screen size are based on Galaxy S20 (most common screen size for mobile)
 Config.set('graphics', 'resizable', False)
@@ -17,6 +17,7 @@ Config.set('graphics', 'height', 800)
 
 
 def load_kv_files():
+    kv_path = "./ui/"
     kv_files = [
         'iskrambol.kv',
         'playscreen.kv', 
@@ -27,7 +28,7 @@ def load_kv_files():
     ]
     
     for file in kv_files:
-        Builder.load_file(file)
+        Builder.load_file(kv_path + file)
 
 
 class WindowManager(ScreenManager):
